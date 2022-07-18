@@ -1,0 +1,66 @@
+        /*-----------
+         Small device
+        ------------- */
+
+@media screen and (max-width:542px) {
+  nav{
+    padding: 0 2%;
+  }
+  .logo{
+    width: 10%;
+  }
+  .menu{
+    width: 90%;
+  }
+  main{   
+    padding: 36px 10px;
+  }
+  .players{
+    grid-template-columns: repeat(1,1fr);
+    grid-column-gap: 8px;  
+  }
+  .player{
+    flex-direction: column;   
+  }
+
+  .top-blog{
+    grid-template-columns: repeat(1, 1fr);  
+  }
+  article{
+   flex-direction: column;   
+  }
+  .course-parent{
+    grid-template-columns: repeat(1,1fr); 
+    grid-row-gap: 20px;   
+  }
+
+}
+        /*------------- 
+          Medidum device 
+         ----------------*/
+
+@media screen and (min-width:543px) and (max-width:739px){
+  main{   
+    padding: 36px 8%;
+  }
+}
+
+
+@media screen and (min-width:543px) and (max-width:1000px){
+  .menu{
+    width: 80%;
+  }
+  .players{
+    grid-template-columns: repeat(2,1fr); 
+  }
+  .top-blog{
+    grid-template-columns: repeat(2, 1fr);  
+  }
+  article{
+   flex-direction: column;   
+  }
+  .course-parent{
+    grid-template-columns: repeat(2,1fr);    
+  }
+
+}
